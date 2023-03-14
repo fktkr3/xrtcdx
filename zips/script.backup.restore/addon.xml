@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.backup.restore"
+    name="Sao Lưu Kodi" version="1.8.0" provider-name="robweber, lambass">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.dateutil" version="2.8.0" />
+    <import addon="script.module.future" version="0.18.2+matrix.1" />
+    <import addon="script.module.dropbox" version="9.4.0" />
+    <import addon="script.module.pyqrcode" version="1.2.1+matrix.1" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>MIT</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=129499</forum>
+    <source>https://github.com/robweber/xbmcbackup</source>
+    <assets>
+    	<icon>icon.png</icon>
+    </assets>
+    <summary lang="en_GB">Backup and restore your Kodi database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="en_US">Backup and restore your Kodi database and configuration files in the event of a crash or file corruption.</summary>
+    <description lang="en_GB">Ever hosed your Kodi configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="en_US">Ever hosed your Kodi configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+  </extension>
+</addon>
